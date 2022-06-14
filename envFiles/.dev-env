@@ -1,0 +1,4 @@
+# application
+APP = NODE_EXPRESS
+
+PORT = 8000;
