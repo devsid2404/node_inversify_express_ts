@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "allowJs": true, // allows js file too
+        "checkJs": true, // checks js file too
+        "outDir": "dist",
+        "target": "ES6",
+        "types": ["reflect-metadata", "node"],
+        // "noEmit": true // only for type checking and not create a js equivalent
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "module": "CommonJS",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": ["src/**/*"]
+}
