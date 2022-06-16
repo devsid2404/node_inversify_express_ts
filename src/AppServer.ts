@@ -25,16 +25,16 @@ export default class AppServer {
             app.disable('x-powered-by');
         });
 
-        this.expressServer.setErrorConfig(app => {
-            app.use((err, req, res, next) => {
-                let statusCode;
-                res.status(statusCode).json({
-                    name: err.name,
-                    message: err.message,
-                    data: err.data
-                });
-            });
-        });
+        // this.expressServer.setErrorConfig(app => {
+        //     app.use((err, req, res, next) => {
+        //         let statusCode;
+        //         res.status(statusCode).json({
+        //             name: err.name,
+        //             message: err.message,
+        //             data: err.data
+        //         });
+        //     });
+        // });
     }
 
     private async startServer():Promise<void>{
