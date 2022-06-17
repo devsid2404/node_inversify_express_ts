@@ -4,7 +4,7 @@
         "checkJs": true, // checks js file too
         "outDir": "dist",
         "target": "ES6",
-        "types": ["reflect-metadata", "node"],
+        "types": ["reflect-metadata", "node", "jest"],
         // "noEmit": true // only for type checking and not create a js equivalent
         "moduleResolution": "node",
         "sourceMap": true,
