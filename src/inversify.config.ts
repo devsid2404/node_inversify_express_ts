@@ -1,8 +1,8 @@
 import { Container } from "inversify";
 import AppServer from "./AppServer";
 import CommonUtils from "./common/common.util";
-import { PostRepository } from "./components/posts/post.repository";
-import { PostService } from "./components/posts/post.service";
+import PostRepository from "./components/posts/post.repository";
+import PostService from "./components/posts/post.service";
 import PostController from "./controllers/posts/posts.controller";
 import InternalTestAPI from "./controllers/testApi/testApi.controller";
 import Service_Identifier from "./Symbols";
