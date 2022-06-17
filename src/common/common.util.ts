@@ -6,7 +6,7 @@ export default class CommonUtils {
     public getSearchArray(stringValue: string = ''): string[] {
         const trimmedString = stringValue.trim().toLowerCase();
         if(trimmedString.startsWith('"') && trimmedString.endsWith('"')){
-            return [trimmedString.slice(1, -1)];
+            return [trimmedString.slice(1, -1).trim()];
         } else {
             return trimmedString.split(' ');
         }
