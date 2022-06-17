@@ -15,3 +15,19 @@
 # Unit test case
 
 - Run unit test case using command => npm run test
+
+# Kodo feature
+
+- Run the application using npm run dev
+- to test the feature 
+- use the query params => 
+    * "name" & "description" to filter => default value null
+    * "start" & "limit" for pagination => default value 0 & 10
+    * "sortBy" to sort ascending or descending default value null
+    * can sort descending using '-' before parameter name eg. sortBy=-name
+
+ - curl request => curl -X GET \
+  'http://localhost:8000/api/posts?name=sid&description=lord something&start=1&limit=20&sortBy=name' \
+  --header 'Accept: */*' \
+  --header 'User-Agent: Thunder Client (https://www.thunderclient.com)'
+
